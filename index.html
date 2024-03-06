@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            /* Radial gradient background */
+            background: radial-gradient(circle, rgb(106 171 171) 0%, rgb(217 245 52 / 49%) 100%);
+        }
+
+        div {
+            height: 100px;
+            width: 50%;
+            border: 5px solid black;
+            margin: 10px auto;
+            border-radius: 5px;
+            background-color: #ffffff; /* Default background color */
+        }
+
+        @media only screen and (max-width: 600px) {
+            div {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Generate a Random Color</h3>
+    <br>
+    <button onclick="changeColor()">Generate color</button>
+    <br>
+    <div id="colorContainer">
+        This is Your New Color
+    </div>
+    <script src="rgb.js"></script>
+
+    <span>Code By Praveen Bhardwaj</span>
+</body>
+
+</html>
